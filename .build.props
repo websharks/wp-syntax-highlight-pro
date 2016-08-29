@@ -1,0 +1,31 @@
+project_title                               = WP Syntax Highlight Pro
+
+project_owner                               = websharks
+project_slug                                = wp-syntax-highlight-pro
+
+project_text_domain                         = wp-syntax-highlight
+project_slack_channel                       = wp-syntax-highlight
+
+project_namespace                           = WebSharks\\WpSharks\\WpSyntaxHighlight\\Pro
+project_sub_namespace                       = WpSharksWpSyntaxHighlightPro
+
+project_lite_title                          = WP Syntax Highlight
+project_lite_slug                           = wp-syntax-highlight
+project_lite_text_domain                    = wp-syntax-highlight
+
+project_lite_namespace                      = WebSharks\\WpSharks\\WpSyntaxHighlight
+project_lite_sub_namespace                  = WpSharksWpSyntaxHighlight
+
+project_version                             = %y%m%d.%now
+
+project_php_required_version                = 7.0.4
+project_php_tested_up_to_version            = ${php.version}
+project_php_required_bits                   = 64
+project_php_required_functions              =
+project_php_required_extensions             =
+
+project_wp_required_version                 = 0.0.0
+project_wp_tested_up_to_version             = 0.0.0
+
+project_wp_sharks_core_required_version     = 160828.35574
+project_wp_sharks_core_tested_up_to_version = 160828.35574
