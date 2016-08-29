@@ -31,12 +31,12 @@ use function get_defined_vars as vars;
 /**
  * Styles/scripts.
  *
- * @since $v Initial release.
+ * @since 160829.41802 Initial release.
  */
 trait StylesScripts
 {
     /**
-     * @since $v Initial release.
+     * @since 160829.41802 Initial release.
      *
      * @param mixed ...$args Variadic args to underlying utility.
      *

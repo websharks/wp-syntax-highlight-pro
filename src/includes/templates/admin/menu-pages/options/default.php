@@ -49,7 +49,7 @@ $Form = $this->s::menuPageForm('§save-options');
 
         <?= $Form->inputRow([
             'type'        => 'text',
-            'placeholder' => __('e.g., #f8f8f8'),
+            'placeholder' => __('e.g., #f8f8f8', 'wp-syntax-highlight'),
             'label'       => __('BG Color Override', 'wp-syntax-highlight'),
             'tip'         => __('Hex color code; e.g., <code>#f8f8f8</code>, <code>#000</code>, <code>#ccc</code><hr />If empty, the background color is defined by the style you selected above.', 'wp-syntax-highlight'),
             'note'        => __('If empty, the background color is defined by the style you selected above.', 'wp-syntax-highlight'),
