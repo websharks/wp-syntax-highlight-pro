@@ -2,9 +2,9 @@
 # This file is distributed under the same license as the WP Syntax Highlight Pro package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WP Syntax Highlight Pro 160829.42099\n"
+"Project-Id-Version: WP Syntax Highlight Pro 160829.44847\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/wp-syntax-highlight-pro\n"
-"POT-Creation-Date: 2016-08-29 11:42:12+00:00\n"
+"POT-Creation-Date: 2016-08-29 12:27:30+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -12,86 +12,212 @@ msgstr ""
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 
+#: .~build/.~/pkg-dirs/for-zip-tgz/wp-syntax-highlight-pro/src/includes/classes/Utils/MenuPage.php:51
+#: .~build/wp-syntax-highlight/.~build/.~/pkg-dirs/for-zip-tgz/wp-syntax-highlight/src/includes/classes/Utils/MenuPage.php:51
+#: .~build/wp-syntax-highlight/.~build/wp-syntax-highlight/src/includes/classes/Utils/MenuPage.php:51
+#: .~build/wp-syntax-highlight/.~build/wp-syntax-highlight-repo/src/includes/classes/Utils/MenuPage.php:51
+#: .~build/wp-syntax-highlight/src/includes/classes/Utils/MenuPage.php:51
+#: .~build/wp-syntax-highlight-pro/src/includes/classes/Utils/MenuPage.php:51
 #: src/includes/classes/Utils/MenuPage.php:51
 msgid "%1$s"
 msgstr ""
 
+#: .~build/.~/pkg-dirs/for-zip-tgz/wp-syntax-highlight-pro/src/includes/classes/Utils/MenuPage.php:53
+#: .~build/wp-syntax-highlight/.~build/.~/pkg-dirs/for-zip-tgz/wp-syntax-highlight/src/includes/classes/Utils/MenuPage.php:53
+#: .~build/wp-syntax-highlight/.~build/wp-syntax-highlight/src/includes/classes/Utils/MenuPage.php:53
+#: .~build/wp-syntax-highlight/.~build/wp-syntax-highlight-repo/src/includes/classes/Utils/MenuPage.php:53
+#: .~build/wp-syntax-highlight/src/includes/classes/Utils/MenuPage.php:53
+#: .~build/wp-syntax-highlight-pro/src/includes/classes/Utils/MenuPage.php:53
 #: src/includes/classes/Utils/MenuPage.php:53
 msgid "Restore Default Options"
 msgstr ""
 
+#: .~build/.~/pkg-dirs/for-zip-tgz/wp-syntax-highlight-pro/src/includes/templates/admin/menu-pages/options/default.php:36
+#: .~build/wp-syntax-highlight/.~build/.~/pkg-dirs/for-zip-tgz/wp-syntax-highlight/src/includes/templates/admin/menu-pages/options/default.php:36
+#: .~build/wp-syntax-highlight/.~build/wp-syntax-highlight/src/includes/templates/admin/menu-pages/options/default.php:36
+#: .~build/wp-syntax-highlight/.~build/wp-syntax-highlight-repo/src/includes/templates/admin/menu-pages/options/default.php:36
+#: .~build/wp-syntax-highlight/src/includes/templates/admin/menu-pages/options/default.php:36
+#: .~build/wp-syntax-highlight-pro/src/includes/templates/admin/menu-pages/options/default.php:36
 #: src/includes/templates/admin/menu-pages/options/default.php:36
 msgid "General Options"
 msgstr ""
 
+#: .~build/.~/pkg-dirs/for-zip-tgz/wp-syntax-highlight-pro/src/includes/templates/admin/menu-pages/options/default.php:37
+#: .~build/wp-syntax-highlight/.~build/.~/pkg-dirs/for-zip-tgz/wp-syntax-highlight/src/includes/templates/admin/menu-pages/options/default.php:37
+#: .~build/wp-syntax-highlight/.~build/wp-syntax-highlight/src/includes/templates/admin/menu-pages/options/default.php:37
+#: .~build/wp-syntax-highlight/.~build/wp-syntax-highlight-repo/src/includes/templates/admin/menu-pages/options/default.php:37
+#: .~build/wp-syntax-highlight/src/includes/templates/admin/menu-pages/options/default.php:37
+#: .~build/wp-syntax-highlight-pro/src/includes/templates/admin/menu-pages/options/default.php:37
 #: src/includes/templates/admin/menu-pages/options/default.php:37
 msgid "You can browse our <a href=\"%1$s\" target=\"_blank\">knowledge base</a> to learn more about these options. Default values are fine for most sites."
 msgstr ""
 
+#: .~build/.~/pkg-dirs/for-zip-tgz/wp-syntax-highlight-pro/src/includes/templates/admin/menu-pages/options/default.php:42
+#: .~build/wp-syntax-highlight/.~build/.~/pkg-dirs/for-zip-tgz/wp-syntax-highlight/src/includes/templates/admin/menu-pages/options/default.php:42
+#: .~build/wp-syntax-highlight/.~build/wp-syntax-highlight/src/includes/templates/admin/menu-pages/options/default.php:42
+#: .~build/wp-syntax-highlight/.~build/wp-syntax-highlight-repo/src/includes/templates/admin/menu-pages/options/default.php:42
+#: .~build/wp-syntax-highlight/src/includes/templates/admin/menu-pages/options/default.php:42
+#: .~build/wp-syntax-highlight-pro/src/includes/templates/admin/menu-pages/options/default.php:42
 #: src/includes/templates/admin/menu-pages/options/default.php:42
 msgid "Highlight.js Style"
 msgstr ""
 
+#: .~build/.~/pkg-dirs/for-zip-tgz/wp-syntax-highlight-pro/src/includes/templates/admin/menu-pages/options/default.php:43
+#: .~build/wp-syntax-highlight/.~build/.~/pkg-dirs/for-zip-tgz/wp-syntax-highlight/src/includes/templates/admin/menu-pages/options/default.php:43
+#: .~build/wp-syntax-highlight/.~build/wp-syntax-highlight/src/includes/templates/admin/menu-pages/options/default.php:43
+#: .~build/wp-syntax-highlight/.~build/wp-syntax-highlight-repo/src/includes/templates/admin/menu-pages/options/default.php:43
+#: .~build/wp-syntax-highlight/src/includes/templates/admin/menu-pages/options/default.php:43
+#: .~build/wp-syntax-highlight-pro/src/includes/templates/admin/menu-pages/options/default.php:43
 #: src/includes/templates/admin/menu-pages/options/default.php:43
 msgid "Powered by Highlight.js.<hr />This option controls the Highlight.js colors used in syntax highlighting.<hr />Review CDN resources and enter a <code>[style]</code>.min.css file basename w/o extension.<hr />e.g., <code>github</code>, <code>dark</code>, <code>ir-black</code>, <code>monokai</code>"
 msgstr ""
 
+#: .~build/.~/pkg-dirs/for-zip-tgz/wp-syntax-highlight-pro/src/includes/templates/admin/menu-pages/options/default.php:44
+#: .~build/wp-syntax-highlight/.~build/.~/pkg-dirs/for-zip-tgz/wp-syntax-highlight/src/includes/templates/admin/menu-pages/options/default.php:44
+#: .~build/wp-syntax-highlight/.~build/wp-syntax-highlight/src/includes/templates/admin/menu-pages/options/default.php:44
+#: .~build/wp-syntax-highlight/.~build/wp-syntax-highlight-repo/src/includes/templates/admin/menu-pages/options/default.php:44
+#: .~build/wp-syntax-highlight/src/includes/templates/admin/menu-pages/options/default.php:44
+#: .~build/wp-syntax-highlight-pro/src/includes/templates/admin/menu-pages/options/default.php:44
 #: src/includes/templates/admin/menu-pages/options/default.php:44
 msgid "Review the list of <a href=\"%1$s\" target=\"_blank\">CDN resources</a> and choose a <code>[style]</code>.min.css. See also: <a href=\"%2$s\" target=\"_blank\">style demos</a>"
 msgstr ""
 
+#: .~build/.~/pkg-dirs/for-zip-tgz/wp-syntax-highlight-pro/src/includes/templates/admin/menu-pages/options/default.php:52
+#: .~build/wp-syntax-highlight/.~build/.~/pkg-dirs/for-zip-tgz/wp-syntax-highlight/src/includes/templates/admin/menu-pages/options/default.php:52
+#: .~build/wp-syntax-highlight/.~build/wp-syntax-highlight/src/includes/templates/admin/menu-pages/options/default.php:52
+#: .~build/wp-syntax-highlight/.~build/wp-syntax-highlight-repo/src/includes/templates/admin/menu-pages/options/default.php:52
+#: .~build/wp-syntax-highlight/src/includes/templates/admin/menu-pages/options/default.php:52
+#: .~build/wp-syntax-highlight-pro/src/includes/templates/admin/menu-pages/options/default.php:52
 #: src/includes/templates/admin/menu-pages/options/default.php:52
 msgid "e.g., #f8f8f8"
 msgstr ""
 
+#: .~build/.~/pkg-dirs/for-zip-tgz/wp-syntax-highlight-pro/src/includes/templates/admin/menu-pages/options/default.php:53
+#: .~build/wp-syntax-highlight/.~build/.~/pkg-dirs/for-zip-tgz/wp-syntax-highlight/src/includes/templates/admin/menu-pages/options/default.php:53
+#: .~build/wp-syntax-highlight/.~build/wp-syntax-highlight/src/includes/templates/admin/menu-pages/options/default.php:53
+#: .~build/wp-syntax-highlight/.~build/wp-syntax-highlight-repo/src/includes/templates/admin/menu-pages/options/default.php:53
+#: .~build/wp-syntax-highlight/src/includes/templates/admin/menu-pages/options/default.php:53
+#: .~build/wp-syntax-highlight-pro/src/includes/templates/admin/menu-pages/options/default.php:53
 #: src/includes/templates/admin/menu-pages/options/default.php:53
 msgid "BG Color Override"
 msgstr ""
 
+#: .~build/.~/pkg-dirs/for-zip-tgz/wp-syntax-highlight-pro/src/includes/templates/admin/menu-pages/options/default.php:54
+#: .~build/wp-syntax-highlight/.~build/.~/pkg-dirs/for-zip-tgz/wp-syntax-highlight/src/includes/templates/admin/menu-pages/options/default.php:54
+#: .~build/wp-syntax-highlight/.~build/wp-syntax-highlight/src/includes/templates/admin/menu-pages/options/default.php:54
+#: .~build/wp-syntax-highlight/.~build/wp-syntax-highlight-repo/src/includes/templates/admin/menu-pages/options/default.php:54
+#: .~build/wp-syntax-highlight/src/includes/templates/admin/menu-pages/options/default.php:54
+#: .~build/wp-syntax-highlight-pro/src/includes/templates/admin/menu-pages/options/default.php:54
 #: src/includes/templates/admin/menu-pages/options/default.php:54
 msgid "Hex color code; e.g., <code>#f8f8f8</code>, <code>#000</code>, <code>#ccc</code><hr />If empty, the background color is defined by the style you selected above."
 msgstr ""
 
+#: .~build/.~/pkg-dirs/for-zip-tgz/wp-syntax-highlight-pro/src/includes/templates/admin/menu-pages/options/default.php:55
+#: .~build/wp-syntax-highlight/.~build/.~/pkg-dirs/for-zip-tgz/wp-syntax-highlight/src/includes/templates/admin/menu-pages/options/default.php:55
+#: .~build/wp-syntax-highlight/.~build/wp-syntax-highlight/src/includes/templates/admin/menu-pages/options/default.php:55
+#: .~build/wp-syntax-highlight/.~build/wp-syntax-highlight-repo/src/includes/templates/admin/menu-pages/options/default.php:55
+#: .~build/wp-syntax-highlight/src/includes/templates/admin/menu-pages/options/default.php:55
+#: .~build/wp-syntax-highlight-pro/src/includes/templates/admin/menu-pages/options/default.php:55
 #: src/includes/templates/admin/menu-pages/options/default.php:55
 msgid "If empty, the background color is defined by the style you selected above."
 msgstr ""
 
+#: .~build/.~/pkg-dirs/for-zip-tgz/wp-syntax-highlight-pro/src/includes/templates/admin/menu-pages/options/default.php:63
+#: .~build/wp-syntax-highlight/.~build/.~/pkg-dirs/for-zip-tgz/wp-syntax-highlight/src/includes/templates/admin/menu-pages/options/default.php:63
+#: .~build/wp-syntax-highlight/.~build/wp-syntax-highlight/src/includes/templates/admin/menu-pages/options/default.php:63
+#: .~build/wp-syntax-highlight/.~build/wp-syntax-highlight-repo/src/includes/templates/admin/menu-pages/options/default.php:63
+#: .~build/wp-syntax-highlight/src/includes/templates/admin/menu-pages/options/default.php:63
+#: .~build/wp-syntax-highlight-pro/src/includes/templates/admin/menu-pages/options/default.php:63
 #: src/includes/templates/admin/menu-pages/options/default.php:63
 msgid "Font Family"
 msgstr ""
 
+#: .~build/.~/pkg-dirs/for-zip-tgz/wp-syntax-highlight-pro/src/includes/templates/admin/menu-pages/options/default.php:64
+#: .~build/wp-syntax-highlight/.~build/.~/pkg-dirs/for-zip-tgz/wp-syntax-highlight/src/includes/templates/admin/menu-pages/options/default.php:64
+#: .~build/wp-syntax-highlight/.~build/wp-syntax-highlight/src/includes/templates/admin/menu-pages/options/default.php:64
+#: .~build/wp-syntax-highlight/.~build/wp-syntax-highlight-repo/src/includes/templates/admin/menu-pages/options/default.php:64
+#: .~build/wp-syntax-highlight/src/includes/templates/admin/menu-pages/options/default.php:64
+#: .~build/wp-syntax-highlight-pro/src/includes/templates/admin/menu-pages/options/default.php:64
 #: src/includes/templates/admin/menu-pages/options/default.php:64
 msgid "Controls the containing element font family."
 msgstr ""
 
+#: .~build/.~/pkg-dirs/for-zip-tgz/wp-syntax-highlight-pro/src/includes/templates/admin/menu-pages/options/default.php:65
+#: .~build/wp-syntax-highlight/.~build/.~/pkg-dirs/for-zip-tgz/wp-syntax-highlight/src/includes/templates/admin/menu-pages/options/default.php:65
+#: .~build/wp-syntax-highlight/.~build/wp-syntax-highlight/src/includes/templates/admin/menu-pages/options/default.php:65
+#: .~build/wp-syntax-highlight/.~build/wp-syntax-highlight-repo/src/includes/templates/admin/menu-pages/options/default.php:65
+#: .~build/wp-syntax-highlight/src/includes/templates/admin/menu-pages/options/default.php:65
+#: .~build/wp-syntax-highlight-pro/src/includes/templates/admin/menu-pages/options/default.php:65
 #: src/includes/templates/admin/menu-pages/options/default.php:65
 msgid "Comma-delimited monospace fonts used in CSS declaration."
 msgstr ""
 
+#: .~build/.~/pkg-dirs/for-zip-tgz/wp-syntax-highlight-pro/src/includes/templates/admin/menu-pages/options/default.php:73
+#: .~build/wp-syntax-highlight/.~build/.~/pkg-dirs/for-zip-tgz/wp-syntax-highlight/src/includes/templates/admin/menu-pages/options/default.php:73
+#: .~build/wp-syntax-highlight/.~build/wp-syntax-highlight/src/includes/templates/admin/menu-pages/options/default.php:73
+#: .~build/wp-syntax-highlight/.~build/wp-syntax-highlight-repo/src/includes/templates/admin/menu-pages/options/default.php:73
+#: .~build/wp-syntax-highlight/src/includes/templates/admin/menu-pages/options/default.php:73
+#: .~build/wp-syntax-highlight-pro/src/includes/templates/admin/menu-pages/options/default.php:73
 #: src/includes/templates/admin/menu-pages/options/default.php:73
 msgid "jQuery Selectors"
 msgstr ""
 
+#: .~build/.~/pkg-dirs/for-zip-tgz/wp-syntax-highlight-pro/src/includes/templates/admin/menu-pages/options/default.php:74
+#: .~build/wp-syntax-highlight/.~build/.~/pkg-dirs/for-zip-tgz/wp-syntax-highlight/src/includes/templates/admin/menu-pages/options/default.php:74
+#: .~build/wp-syntax-highlight/.~build/wp-syntax-highlight/src/includes/templates/admin/menu-pages/options/default.php:74
+#: .~build/wp-syntax-highlight/.~build/wp-syntax-highlight-repo/src/includes/templates/admin/menu-pages/options/default.php:74
+#: .~build/wp-syntax-highlight/src/includes/templates/admin/menu-pages/options/default.php:74
+#: .~build/wp-syntax-highlight-pro/src/includes/templates/admin/menu-pages/options/default.php:74
 #: src/includes/templates/admin/menu-pages/options/default.php:74
 msgid "jQuery selectors matching elements to highlight."
 msgstr ""
 
+#: .~build/.~/pkg-dirs/for-zip-tgz/wp-syntax-highlight-pro/src/includes/templates/admin/menu-pages/options/default.php:75
+#: .~build/wp-syntax-highlight/.~build/.~/pkg-dirs/for-zip-tgz/wp-syntax-highlight/src/includes/templates/admin/menu-pages/options/default.php:75
+#: .~build/wp-syntax-highlight/.~build/wp-syntax-highlight/src/includes/templates/admin/menu-pages/options/default.php:75
+#: .~build/wp-syntax-highlight/.~build/wp-syntax-highlight-repo/src/includes/templates/admin/menu-pages/options/default.php:75
+#: .~build/wp-syntax-highlight/src/includes/templates/admin/menu-pages/options/default.php:75
+#: .~build/wp-syntax-highlight-pro/src/includes/templates/admin/menu-pages/options/default.php:75
 #: src/includes/templates/admin/menu-pages/options/default.php:75
 msgid "A comma-delimited list of CSS selectors compatible with jQuery; e.g., <code>$([selectors])</code>"
 msgstr ""
 
+#: .~build/.~/pkg-dirs/for-zip-tgz/wp-syntax-highlight-pro/src/includes/templates/admin/menu-pages/options/default.php:76
+#: .~build/wp-syntax-highlight/.~build/.~/pkg-dirs/for-zip-tgz/wp-syntax-highlight/src/includes/templates/admin/menu-pages/options/default.php:76
+#: .~build/wp-syntax-highlight/.~build/wp-syntax-highlight/src/includes/templates/admin/menu-pages/options/default.php:76
+#: .~build/wp-syntax-highlight/.~build/wp-syntax-highlight-repo/src/includes/templates/admin/menu-pages/options/default.php:76
+#: .~build/wp-syntax-highlight/src/includes/templates/admin/menu-pages/options/default.php:76
+#: .~build/wp-syntax-highlight-pro/src/includes/templates/admin/menu-pages/options/default.php:76
 #: src/includes/templates/admin/menu-pages/options/default.php:76
 msgid "<em>Selecting <code>pre &gt; code</code> makes this compatible with fenced code blocks in Markdown; e.g., Jetpack.</em>"
 msgstr ""
 
+#: .~build/.~/pkg-dirs/for-zip-tgz/wp-syntax-highlight-pro/src/includes/templates/admin/menu-pages/options/default.php:84
+#: .~build/wp-syntax-highlight/.~build/.~/pkg-dirs/for-zip-tgz/wp-syntax-highlight/src/includes/templates/admin/menu-pages/options/default.php:84
+#: .~build/wp-syntax-highlight/.~build/wp-syntax-highlight/src/includes/templates/admin/menu-pages/options/default.php:84
+#: .~build/wp-syntax-highlight/.~build/wp-syntax-highlight-repo/src/includes/templates/admin/menu-pages/options/default.php:84
+#: .~build/wp-syntax-highlight/src/includes/templates/admin/menu-pages/options/default.php:84
+#: .~build/wp-syntax-highlight-pro/src/includes/templates/admin/menu-pages/options/default.php:84
 #: src/includes/templates/admin/menu-pages/options/default.php:84
 msgid "jQuery Exclusions"
 msgstr ""
 
+#: .~build/.~/pkg-dirs/for-zip-tgz/wp-syntax-highlight-pro/src/includes/templates/admin/menu-pages/options/default.php:85
+#: .~build/wp-syntax-highlight/.~build/.~/pkg-dirs/for-zip-tgz/wp-syntax-highlight/src/includes/templates/admin/menu-pages/options/default.php:85
+#: .~build/wp-syntax-highlight/.~build/wp-syntax-highlight/src/includes/templates/admin/menu-pages/options/default.php:85
+#: .~build/wp-syntax-highlight/.~build/wp-syntax-highlight-repo/src/includes/templates/admin/menu-pages/options/default.php:85
+#: .~build/wp-syntax-highlight/src/includes/templates/admin/menu-pages/options/default.php:85
+#: .~build/wp-syntax-highlight-pro/src/includes/templates/admin/menu-pages/options/default.php:85
 #: src/includes/templates/admin/menu-pages/options/default.php:85
 msgid "Controls the <code>:not()</code> filter in jQuery, which allows for special exclusion classes."
 msgstr ""
 
+#: .~build/.~/pkg-dirs/for-zip-tgz/wp-syntax-highlight-pro/src/includes/templates/admin/menu-pages/options/default.php:86
+#: .~build/wp-syntax-highlight/.~build/.~/pkg-dirs/for-zip-tgz/wp-syntax-highlight/src/includes/templates/admin/menu-pages/options/default.php:86
+#: .~build/wp-syntax-highlight/.~build/wp-syntax-highlight/src/includes/templates/admin/menu-pages/options/default.php:86
+#: .~build/wp-syntax-highlight/.~build/wp-syntax-highlight-repo/src/includes/templates/admin/menu-pages/options/default.php:86
+#: .~build/wp-syntax-highlight/src/includes/templates/admin/menu-pages/options/default.php:86
+#: .~build/wp-syntax-highlight-pro/src/includes/templates/admin/menu-pages/options/default.php:86
 #: src/includes/templates/admin/menu-pages/options/default.php:86
 msgid "Comma-delimited; e.g., <code>$([selectors]).not([exclusions])</code>"
 msgstr ""

@@ -1,3 +1,7 @@
+## [coming soon]
+
+- Bug fix. Removing `inherit` styles in favor of Highlight.js style selection or configuration option.
+
 ## v160829.42099
 
 - Initial release.
