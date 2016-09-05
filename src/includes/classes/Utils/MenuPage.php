@@ -44,15 +44,12 @@ class MenuPage extends SCoreClasses\SCore\Base\Core
     {
         s::addMenuPageItem([
             'parent_page'   => 'options-general.php',
-            'menu_title'    => $this->App->Config->©brand['©name'],
+            'menu_title'    => __('Syntax Highlt.', 'wp-syntax-highlight'),
             'template_file' => 'admin/menu-pages/options/default.php',
 
-            'tabs' => [
+            'meta_links' => ['restore' => true],
+            'tabs'       => [
                 'default' => sprintf(__('%1$s', 'wp-syntax-highlight'), esc_html($this->App->Config->©brand['©name'])),
-                'restore' => [
-                    'label' => __('Restore Default Options', 'wp-syntax-highlight'),
-                    'url'   => s::restoreDefaultOptionsUrl(), 'onclick' => 'confirm',
-                ],
             ],
         ]);
     }

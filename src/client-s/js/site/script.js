@@ -8,7 +8,7 @@
     /*
      * Syntax highlighting via Highlight.js.
      */
-    $(x.settings.hljsSelectors).not(x.settings.hljsExclusions).each(function () {
+    $(x.settings.hljsSelectors).each(function () {
       var $this = $(this),
         $parent = $this.parent();
 
@@ -23,7 +23,9 @@
       if (x.settings.hljsFontFamily) {
         $this.css('font-family', x.settings.hljsFontFamily);
       }
-      hljs.highlightBlock(this); // Highlight.js.
+      if (!$this.is(x.settings.hljsExclusions)) {
+        hljs.highlightBlock(this); // Highlight.js.
+      }
     });
   });
 })(jQuery);
