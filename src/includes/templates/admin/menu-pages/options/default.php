@@ -81,6 +81,16 @@ $Form = $this->s::menuPageForm('§save-options');
 
         <?= $Form->inputRow([
             'type'  => 'text',
+            'label' => __('jQuery Text Classes', 'wp-syntax-highlight'),
+            'tip'   => __('Instead of excluding selectors entirely, you can use one of these plain-text classes.<hr />Plain text blocks are given basic structural styles, but language parsing is disabled.', 'wp-syntax-highlight'),
+            'note'  => __('Comma-delimited; e.g., <code>.plain, .text, .txt</code> (apply basic styles, but treat as plain text).', 'wp-syntax-highlight'),
+
+            'name'  => 'hljs_plain_text',
+            'value' => s::getOption('hljs_plain_text'),
+        ]); ?>
+
+        <?= $Form->inputRow([
+            'type'  => 'text',
             'label' => __('jQuery Exclusions', 'wp-syntax-highlight'),
             'tip'   => __('Controls the <code>:not()</code> filter in jQuery, which allows for special exclusion classes.', 'wp-syntax-highlight'),
             'note'  => __('Comma-delimited; e.g., <code>$([selectors]).not([exclusions])</code>', 'wp-syntax-highlight'),

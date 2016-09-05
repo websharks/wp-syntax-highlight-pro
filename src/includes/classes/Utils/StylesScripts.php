@@ -116,6 +116,7 @@ class StylesScripts extends SCoreClasses\SCore\Base\Core
         $hljs_font_family = s::getOption('hljs_font_family');
 
         $hljs_selectors  = s::getOption('hljs_selectors');
+        $hljs_plain_text = s::getOption('hljs_plain_text');
         $hljs_exclusions = s::getOption('hljs_exclusions');
 
         if (!$hljs_style || !$hljs_selectors) {
@@ -127,6 +128,7 @@ class StylesScripts extends SCoreClasses\SCore\Base\Core
             'hljsFontFamily' => $hljs_font_family,
 
             'hljsSelectors'  => $hljs_selectors,
+            'hljsPlainText'  => $hljs_plain_text,
             'hljsExclusions' => $hljs_exclusions,
         ]);
     }
