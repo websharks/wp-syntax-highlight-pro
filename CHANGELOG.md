@@ -1,5 +1,6 @@
 ## [coming soon]
 
+- Bug fix. The `wp` language should be caSe-insensitive.
 - Bug fix. Should be `.plain, .text` (w/ comma) in the default config option value for exclusions.
 - Bug fix. Removing `inherit` styles in favor of Highlight.js style selection or configuration option.
 

@@ -21,6 +21,8 @@ hljs.registerLanguage('wp', function (hljs) {
       'wordpress-shortcode',
       'wordpress-shortcodes'
     ],
+    case_insensitive: true,
+
     contains: [{
       className: 'tag',
       begin: /\[\/?/,
@@ -29,7 +31,7 @@ hljs.registerLanguage('wp', function (hljs) {
 
       contains: [{
         className: 'name',
-        begin: /[a-z_\-][a-z0-9_\-]*/i,
+        begin: /[a-z_\-][a-z0-9_\-]*/,
         relevance: 0
       }, {
         illegal: /[[\]]/,
@@ -38,7 +40,7 @@ hljs.registerLanguage('wp', function (hljs) {
 
         contains: [{
           className: 'attr',
-          begin: /[a-z0-9_\-]+/i,
+          begin: /[a-z0-9_\-]+/,
           relevance: 0
         }, {
           begin: /\=\s*/,
