@@ -1,4 +1,4 @@
-## [coming soon]
+## v160919.19768
 
 - Bug fix. The `wp` language should be caSe-insensitive.
 - Bug fix. Should be `.plain, .text` (w/ comma) in the default config option value for exclusions.
