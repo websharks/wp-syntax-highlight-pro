@@ -1,5 +1,8 @@
 ## $v
 
+- Updating minimum required version of the WP Sharks Core.
+- Updating scripts/styles to bring them inline with core standards.
+- Adding `integrity=""` attributes to Highlight.js style/script tags.
 - Enhancing security by removing `basename(__FILE__)` from direct access notices.
 
 ## v160919.19768

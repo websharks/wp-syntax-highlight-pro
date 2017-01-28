@@ -5,7 +5,7 @@
  * @author @jaswsinc
  * @copyright WP Sharks™
  */
-declare (strict_types = 1);
+declare(strict_types=1);
 namespace WebSharks\WpSharks\WpSyntaxHighlight\Pro\Classes;
 
 use WebSharks\WpSharks\WpSyntaxHighlight\Pro\Classes;
@@ -40,9 +40,9 @@ class App extends SCoreClasses\App
      *
      * @since 160829.41802
      *
-     * @var string Version.
+     * @type string Version.
      */
-    const VERSION = '160919.19768'; //v//
+    const VERSION = '170128.921'; //v//
 
     /**
      * Constructor.
@@ -82,8 +82,7 @@ class App extends SCoreClasses\App
             ],
 
             'hljs' => [
-                'version'            => '9.6.0',
-                'cdn_files_list_url' => 'https://cdnjs.com/libraries/highlight.js/9.6.0',
+                'cdn_files_list_url' => 'https://cdnjs.com/libraries/highlight.js',
                 'style_demos_url'    => 'https://highlightjs.org/static/demo/',
             ],
             '§pro_option_keys' => [],

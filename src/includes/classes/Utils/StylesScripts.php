@@ -5,7 +5,7 @@
  * @author @jaswsinc
  * @copyright WP Sharks™
  */
-declare (strict_types = 1);
+declare(strict_types=1);
 namespace WebSharks\WpSharks\WpSyntaxHighlight\Pro\Classes\Utils;
 
 use WebSharks\WpSharks\WpSyntaxHighlight\Pro\Classes;
@@ -77,20 +77,22 @@ class StylesScripts extends SCoreClasses\SCore\Base\Core
         } elseif (!($settings = $this->applicableSettings())) {
             return; // Not applicable.
         }
-        wp_enqueue_style('highlight-js', '//cdnjs.cloudflare.com/ajax/libs/highlight.js/'.urlencode($this->App->Config->hljs['version']).'/styles/'.urlencode($settings['hljsStyle']).'.min.css', [], null);
+        s::enqueueHighlightJsLibs($settings['hljsStyle']);
+
         wp_enqueue_style($this->App->Config->©brand['©slug'], c::appUrl('/client-s/css/site/style.min.css'), ['highlight-js'], $this->App::VERSION);
-
-        wp_enqueue_script('highlight-js', '//cdnjs.cloudflare.com/ajax/libs/highlight.js/'.urlencode($this->App->Config->hljs['version']).'/highlight.min.js', [], null, true);
-        wp_enqueue_script('highlight-js-lang-wp', c::appUrl('/client-s/js/hljs/langs/wp.min.js'), ['highlight-js'], $this->App::VERSION, true);
-
         wp_enqueue_script($this->App->Config->©brand['©slug'], c::appUrl('/client-s/js/site/script.min.js'), ['jquery', 'highlight-js', 'highlight-js-lang-wp'], $this->App::VERSION, true);
-        wp_localize_script($this->App->Config->©brand['©slug'], 'gnyQWfVLQSyCrXargTDZJRxKStxKAHMcData', [
-            'brand' => [
-                'slug' => $this->App->Config->©brand['©slug'],
-                'var'  => $this->App->Config->©brand['©var'],
-            ],
-            'settings' => $settings, // Via `applicableSettings()`.
-        ]);
+
+        wp_localize_script(
+            $this->App->Config->©brand['©slug'],
+            'kkagfv2gdyd7wu2ambarnb2n6vcpbr83Data',
+            [
+                'brand' => [
+                    'slug' => $this->App->Config->©brand['©slug'],
+                    'var'  => $this->App->Config->©brand['©var'],
+                ],
+                'settings' => $settings, // Via `applicableSettings()`.
+            ]
+        );
     }
 
     /**
@@ -106,7 +108,6 @@ class StylesScripts extends SCoreClasses\SCore\Base\Core
             return $settings; // Cached this already.
         }
         $is_applicable_filter = s::applyFilters('is_applicable', null);
-        // NOTE: This can be used to force a `true` or `false` value.
 
         if ($is_applicable_filter === false) {
             return $settings = []; // Not applicable.

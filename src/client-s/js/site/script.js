@@ -3,7 +3,7 @@
     /*
      * Plugin-specific data.
      */
-    var x = gnyQWfVLQSyCrXargTDZJRxKStxKAHMcData;
+    var x = kkagfv2gdyd7wu2ambarnb2n6vcpbr83Data;
 
     /*
      * Syntax highlighting via Highlight.js.
