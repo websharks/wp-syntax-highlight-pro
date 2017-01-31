@@ -1,5 +1,7 @@
 ## $v
 
+- Adding `.none` to list of ignored classes.
+- Now pulling base structural styles from WS core lib.
 - Updating minimum required version of the WP Sharks Core.
 - Updating scripts/styles to bring them inline with core standards.
 - Adding `integrity=""` attributes to Highlight.js style/script tags.

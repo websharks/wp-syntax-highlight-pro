@@ -1,0 +1,125 @@
+/*
+ * Requires a local copy of the WP Sharks Core.
+ */
+/*
+ * Dependencies. Requires a local copy of the WebSharks Core.
+ */
+/*
+ * Semantic colors.
+ */
+/*
+ * Fancy blockquotes.
+ */
+/*
+ * Fancy monospace tags.
+ */
+/*
+ * Social network colors.
+ */
+/*
+ * Name that color!
+ * <http://chir.ag/projects/name-that-color>
+ */
+/*
+ * Pixels to rem.
+ */
+/*
+ * Fancy blockquotes.
+ */
+/*
+ * Fancy monospace tags.
+ */
+/*
+ * Fancy navigation menus.
+ */
+/*
+ * Fancy pagination menus.
+ */
+/*
+ * Fancy placeholders.
+ */
+/*
+ * Pixels to rem.
+ */
+/*
+ * Mixins for responsive tweaks.
+ * See: <http://semantic-ui.com/elements/container.html>
+ * See: <http://semantic-ui.com/collections/grid.html#device-visibility>
+ * See: <http://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/semantic.css>
+ */
+/*
+ * Larger fonts.
+ */
+/*
+ * Responsive images.
+ */
+/*
+ * Highlight.js <pre><code>.
+ */
+/*
+ * Mixins for responsive tweaks.
+ * See: <http://semantic-ui.com/elements/container.html>
+ * See: <http://semantic-ui.com/collections/grid.html#device-visibility>
+ * See: <http://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/semantic.css>
+ */
+/*
+ * Align utils.
+ */
+/*
+ * Blurred utils.
+ */
+/*
+ * Content utils.
+ */
+/*
+ * Display utils.
+ */
+/*
+ * Line clamp utils.
+ */
+/*
+ * Muted utils.
+ */
+/*
+ * Responsive utils.
+ */
+/*
+ * Brand configuration.
+ */
+/*
+ * Structural styles.
+ */
+.hljs-pre {
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  text-shadow: none;
+  width: 100%;
+  height: auto;
+  max-height: none;
+  overflow: visible;
+  display: block;
+  box-sizing: border-box;
+  background: none;
+}
+
+.hljs-pre > .hljs {
+  margin: 0;
+  padding: 1em;
+  border: 0;
+  border-radius: .25em;
+  box-shadow: none;
+  text-shadow: none;
+  font-size: 1em;
+  line-height: 1.3;
+  white-space: pre;
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  overflow: auto;
+  display: block;
+  box-sizing: border-box;
+}
+
+/*# sourceMappingURL=style.css.map */

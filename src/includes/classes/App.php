@@ -93,7 +93,7 @@ class App extends SCoreClasses\App
                 'hljs_font_family' => "'Hack', 'Menlo', 'Monaco', 'Consolas', 'Andale Mono', 'DejaVu Sans Mono', monospace",
 
                 'hljs_selectors'  => 'pre > code',
-                'hljs_plain_text' => '.plain, .text, .txt',
+                'hljs_plain_text' => '.none .plain, .text, .txt',
                 'hljs_exclusions' => '.no-highlight, .nohighlight',
             ],
 
