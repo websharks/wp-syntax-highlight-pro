@@ -79,20 +79,33 @@ class StylesScripts extends SCoreClasses\SCore\Base\Core
         }
         s::enqueueHighlightJsLibs($settings['hljsStyle']);
 
-        wp_enqueue_style($this->App->Config->©brand['©slug'], c::appUrl('/client-s/css/site/style.min.css'), ['highlight-js'], $this->App::VERSION);
-        wp_enqueue_script($this->App->Config->©brand['©slug'], c::appUrl('/client-s/js/site/script.min.js'), ['jquery', 'highlight-js', 'highlight-js-lang-wp'], $this->App::VERSION, true);
-
-        wp_localize_script(
-            $this->App->Config->©brand['©slug'],
-            'kkagfv2gdyd7wu2ambarnb2n6vcpbr83Data',
-            [
-                'brand' => [
-                    'slug' => $this->App->Config->©brand['©slug'],
-                    'var'  => $this->App->Config->©brand['©var'],
+        s::enqueueLibs(__METHOD__, [
+            'styles' => [
+                $this->App->Config->©brand['©slug'] => [
+                    'ver'  => $this->App::VERSION,
+                    'deps' => ['highlight-js'],
+                    'url'  => c::appUrl('/client-s/css/site/style.min.css'),
                 ],
-                'settings' => $settings, // Via `applicableSettings()`.
-            ]
-        );
+            ],
+            'scripts' => [
+                $this->App->Config->©brand['©slug'] => [
+                    'ver'      => $this->App::VERSION,
+                    'deps'     => ['jquery', 'highlight-js', 'highlight-js-lang-wp'],
+                    'url'      => c::appUrl('/client-s/js/site/script.min.js'),
+                    'localize' => [
+                        'key'  => 'kkagfv2gdyd7wu2ambarnb2n6vcpbr83Data',
+                        'data' => [
+                            'brand' => [
+                                'slug' => $this->App->Config->©brand['©slug'],
+                                'var'  => $this->App->Config->©brand['©var'],
+                            ],
+                            'settings' => $settings, // Filterable.
+                            // See filter below in `applicableSettings()`.
+                        ],
+                    ],
+                ],
+            ],
+        ]);
     }
 
     /**
@@ -120,8 +133,8 @@ class StylesScripts extends SCoreClasses\SCore\Base\Core
         $hljs_plain_text = s::getOption('hljs_plain_text');
         $hljs_exclusions = s::getOption('hljs_exclusions');
 
-        if (!$hljs_style || !$hljs_selectors) {
-            return $settings = []; // Not applicable.
+        if (!$hljs_selectors) { // Must have selectors.
+            return $settings = []; // Not possible.
         }
         return $settings = s::applyFilters('script_settings', [
             'hljsStyle'      => $hljs_style,

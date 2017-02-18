@@ -2,9 +2,9 @@
 # This file is distributed under the same license as the WP Syntax Highlight Pro package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WP Syntax Highlight Pro 170131.36684\n"
+"Project-Id-Version: WP Syntax Highlight Pro 170218.31982\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/wp-syntax-highlight-pro\n"
-"POT-Creation-Date: 2017-01-31 10:11:27+00:00\n"
+"POT-Creation-Date: 2017-02-18 08:53:04+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -93,7 +93,7 @@ msgid "Instead of excluding selectors entirely, you can use one of these plain-t
 msgstr ""
 
 #: src/includes/templates/admin/menu-pages/options/default.php:89
-msgid "Comma-delimited; e.g., <code>.plain, .text, .txt</code> (apply basic styles, but treat as plain text)."
+msgid "Comma-delimited; e.g., <code>.lang-none, .plain, .text, .txt</code> (apply basic styles, but treat as plain text)."
 msgstr ""
 
 #: src/includes/templates/admin/menu-pages/options/default.php:97

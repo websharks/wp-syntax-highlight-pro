@@ -6,28 +6,31 @@
     var x = kkagfv2gdyd7wu2ambarnb2n6vcpbr83Data;
 
     /*
-     * Syntax highlighting via Highlight.js.
+     * Highlight.js.
      */
-    $(x.settings.hljsSelectors).not(x.settings.hljsExclusions).each(function () {
-      var $this = $(this),
-        $parent = $this.parent();
+    $(x.settings.hljsSelectors)
+      .not(x.settings.hljsExclusions)
+      .each(function () {
+        var $this = $(this),
+          $parent = $this.parent();
 
-      if (x.settings.hljsSelectors === 'pre > code') {
-        $parent.addClass('hljs-pre'); // i.e., `<pre class="hljs-pre"><code>...`
-      } else if ($this.prop('tagName') === 'code' && $parent.prop('tagName') === 'pre') {
-        $parent.addClass('hljs-pre'); // Same; but only for this specific tab combo.
-      }
-      if (x.settings.hljsBgColor) {
-        $this.css('background', x.settings.hljsBgColor);
-      }
-      if (x.settings.hljsFontFamily) {
-        $this.css('font-family', x.settings.hljsFontFamily);
-      }
-      if ($this.is(x.settings.hljsPlainText)) {
-        $this.addClass('hljs'); // Treat as plain text.
-      } else {
-        hljs.highlightBlock(this); // Highlight.js.
-      }
-    });
+        if (x.settings.hljsSelectors === 'pre > code') {
+          $parent.addClass('hljs-pre'); // i.e., `<pre class="hljs-pre"><code>...`
+          //
+        } else if ($this.prop('tagName') === 'code' && $parent.prop('tagName') === 'pre') {
+          $parent.addClass('hljs-pre'); // Same; but only for this specific tab combo.
+        }
+        if (x.settings.hljsBgColor) {
+          $this.css('background', x.settings.hljsBgColor);
+        }
+        if (x.settings.hljsFontFamily) {
+          $this.css('font-family', x.settings.hljsFontFamily);
+        }
+        if ($this.is(x.settings.hljsPlainText)) {
+          $this.addClass('hljs lang-none');
+        } else {
+          hljs.highlightBlock(this);
+        }
+      });
   });
 })(jQuery);

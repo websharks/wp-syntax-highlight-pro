@@ -1,6 +1,6 @@
 === WP Syntax Highlight Pro ===
 
-Stable tag: 170131.36684
+Stable tag: 170218.31982
 
 Tested up to: 0.0.0
 Requires at least: 0.0.0
