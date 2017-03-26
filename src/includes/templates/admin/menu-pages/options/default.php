@@ -102,6 +102,18 @@ $Form = $this->s::menuPageForm('§save-options');
             'value' => s::getOption('hljs_exclusions'),
         ]); ?>
 
+        <?= $Form->selectRow([
+            'label' => __('Lazy Load?', 'wp-syntax-highlight'),
+            'tip'   => __('Enable this to avoid loading JS/CSS on pages that do not require syntax highlighting.', 'wp-syntax-highlight'),
+
+            'name'    => 'lazy_load',
+            'value'   => s::getOption('lazy_load'),
+            'options' => [
+                '1' => __('Yes', 'wp-syntax-highlight'),
+                '0' => __('No', 'wp-syntax-highlight'),
+            ],
+        ]); ?>
+
     <?= $Form->closeTable(); ?>
 
     <?= $Form->submitButton(); ?>

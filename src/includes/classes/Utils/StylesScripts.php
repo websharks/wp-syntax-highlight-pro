@@ -120,11 +120,11 @@ class StylesScripts extends SCoreClasses\SCore\Base\Core
         if (($settings = &$this->cacheKey(__FUNCTION__)) !== null) {
             return $settings; // Cached this already.
         }
-        $is_applicable_filter = s::applyFilters('is_applicable', null);
+        $is_applicable = null; // Initialize.
 
-        if ($is_applicable_filter === false) {
-            return $settings = []; // Not applicable.
-        }
+        $lazy_load        = s::getOption('lazy_load');
+        $lazy_load_marker = '<!--'.$this->App->Config->©brand['©slug'].'-->';
+
         $hljs_style       = s::getOption('hljs_style');
         $hljs_bg_color    = s::getOption('hljs_bg_color');
         $hljs_font_family = s::getOption('hljs_font_family');
@@ -136,7 +136,24 @@ class StylesScripts extends SCoreClasses\SCore\Base\Core
         if (!$hljs_selectors) { // Must have selectors.
             return $settings = []; // Not possible.
         }
+        if ($lazy_load && $hljs_selectors === 'pre > code') {
+            if (!is_singular()) {
+                $is_applicable = false;
+            } elseif (!($WP_Post = get_post())) {
+                $is_applicable = false;
+            } elseif (mb_stripos($WP_Post->post_content, $lazy_load_marker) !== false) {
+                $is_applicable = true; // Explicitly enabled by comment marker.
+            } elseif (mb_stripos($WP_Post->post_content, '<pre') === false || mb_stripos($WP_Post->post_content, '<code') === false) {
+                $is_applicable = false; // Nothing to highlight in this case.
+            }
+        } // Give filters a chance to override lazy load detection.
+        $is_applicable = s::applyFilters('is_applicable', $is_applicable);
+
+        if ($is_applicable === false) {
+            return $settings = []; // Not applicable.
+        }
         return $settings = s::applyFilters('script_settings', [
+            'hljsStyle'      => $hljs_style,
             'hljsStyle'      => $hljs_style,
             'hljsBgColor'    => $hljs_bg_color,
             'hljsFontFamily' => $hljs_font_family,

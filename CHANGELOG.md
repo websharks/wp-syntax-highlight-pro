@@ -1,5 +1,6 @@
 ## $v
 
+- Adding lazy load configuration option.
 - Adding `.none` to list of ignored classes.
 - Now pulling base structural styles from WS core lib.
 - Updating minimum required version of the WP Sharks Core.
