@@ -1,9 +1,9 @@
 === WP Syntax Highlight Pro ===
 
-Stable tag: 170326.13705
+Stable tag: 170326.20987
 
-Tested up to: 0.0.0
-Requires at least: 0.0.0
+Tested up to: 4.8
+Requires at least: 4.7
 
 Text Domain: wp-syntax-highlight
 

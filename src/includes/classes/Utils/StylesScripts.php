@@ -136,17 +136,17 @@ class StylesScripts extends SCoreClasses\SCore\Base\Core
         if (!$hljs_selectors) { // Must have selectors.
             return $settings = []; // Not possible.
         }
-        if ($lazy_load && $hljs_selectors === 'pre > code') {
+        if (!isset($is_applicable) && $lazy_load) {
             if (!is_singular()) {
                 $is_applicable = false;
             } elseif (!($WP_Post = get_post())) {
                 $is_applicable = false;
             } elseif (mb_stripos($WP_Post->post_content, $lazy_load_marker) !== false) {
                 $is_applicable = true; // Explicitly enabled by comment marker.
-            } elseif (mb_stripos($WP_Post->post_content, '<pre') === false || mb_stripos($WP_Post->post_content, '<code') === false) {
+            } elseif ($hljs_selectors === 'pre > code' && (mb_stripos($WP_Post->post_content, '<pre') === false || mb_stripos($WP_Post->post_content, '<code') === false)) {
                 $is_applicable = false; // Nothing to highlight in this case.
             }
-        } // Give filters a chance to override lazy load detection.
+        } // Give filters a chance to override detections above.
         $is_applicable = s::applyFilters('is_applicable', $is_applicable);
 
         if ($is_applicable === false) {

@@ -7,6 +7,7 @@
 - Updating scripts/styles to bring them inline with core standards.
 - Adding `integrity=""` attributes to Highlight.js style/script tags.
 - Enhancing security by removing `basename(__FILE__)` from direct access notices.
+- Removing unnecessary lite build variation.
 
 ## v160919.19768
 
