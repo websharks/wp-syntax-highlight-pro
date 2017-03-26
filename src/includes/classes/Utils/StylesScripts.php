@@ -120,7 +120,8 @@ class StylesScripts extends SCoreClasses\SCore\Base\Core
         if (($settings = &$this->cacheKey(__FUNCTION__)) !== null) {
             return $settings; // Cached this already.
         }
-        $is_applicable = null; // Initialize.
+        $is_applicable  = null; // Initialize.
+        $lazy_load_says = null; // Initialize.
 
         $lazy_load        = s::getOption('lazy_load');
         $lazy_load_marker = '<!--'.$this->App->Config->©brand['©slug'].'-->';
@@ -138,18 +139,24 @@ class StylesScripts extends SCoreClasses\SCore\Base\Core
         }
         if (!isset($is_applicable) && $lazy_load) {
             if (!is_singular()) {
-                $is_applicable = false;
+                $lazy_load_says = false;
             } elseif (!($WP_Post = get_post())) {
-                $is_applicable = false;
+                $lazy_load_says = false;
             } elseif (mb_stripos($WP_Post->post_content, $lazy_load_marker) !== false) {
-                $is_applicable = true; // Explicitly enabled by comment marker.
-            } elseif ($hljs_selectors === 'pre > code' && (mb_stripos($WP_Post->post_content, '<pre') === false || mb_stripos($WP_Post->post_content, '<code') === false)) {
-                $is_applicable = false; // Nothing to highlight in this case.
+                $lazy_load_says = true; // Explicitly enabled by comment marker.
+            } elseif ($hljs_selectors === 'pre > code' // Only possible when we know what to look for.
+                && (mb_stripos($WP_Post->post_content, '<pre') === false || mb_stripos($WP_Post->post_content, '<code') === false)
+                && mb_stripos($WP_Post->post_content, '[snippet') === false // `[snippet]` shortcode.
+                && mb_stripos($WP_Post->post_content, '[md') === false // `[md]` shortcode.
+            ) {
+                $lazy_load_says = false; // Nothing to highlight in this case.
             }
         } // Give filters a chance to override detections above.
-        $is_applicable = s::applyFilters('is_applicable', $is_applicable);
+        $is_applicable = s::applyFilters('is_applicable', $is_applicable, $lazy_load_says);
 
-        if ($is_applicable === false) {
+        if ($is_applicable === false
+            || (!isset($is_applicable) && $lazy_load_says === false)
+        ) {
             return $settings = []; // Not applicable.
         }
         return $settings = s::applyFilters('script_settings', [
