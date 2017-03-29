@@ -1,4 +1,4 @@
-## $v
+## v170329.47664
 
 - Adding lazy load configuration option.
 - Adding `.none` to list of ignored classes.
