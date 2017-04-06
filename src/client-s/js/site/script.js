@@ -3,7 +3,7 @@
     /*
      * Plugin-specific data.
      */
-    var x = wpSyntaxHighlightProData;
+    var x = wpSyntaxHighlightData;
 
     /*
      * Highlight.js.
