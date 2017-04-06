@@ -2,9 +2,9 @@
 # This file is distributed under the same license as the WP Syntax Highlight Pro package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WP Syntax Highlight Pro 170329.47664\n"
+"Project-Id-Version: WP Syntax Highlight Pro 170406.20241\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/wp-syntax-highlight-pro\n"
-"POT-Creation-Date: 2017-03-29 13:14:59+00:00\n"
+"POT-Creation-Date: 2017-04-06 05:37:24+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -61,11 +61,11 @@ msgid "Font Family"
 msgstr ""
 
 #: src/includes/templates/admin/menu-pages/options/default.php:67
-msgid "Controls the containing element font family."
+msgid "Controls the containing element font family. If empty, the font family is defined by the style you selected above."
 msgstr ""
 
 #: src/includes/templates/admin/menu-pages/options/default.php:68
-msgid "Comma-delimited monospace fonts used in CSS declaration."
+msgid "Comma-delimited monospace fonts used in CSS. If empty, the font family is defined by the style you selected above."
 msgstr ""
 
 #: src/includes/templates/admin/menu-pages/options/default.php:76

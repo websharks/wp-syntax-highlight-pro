@@ -2,10 +2,10 @@
  * Requires a local copy of the WP Sharks Core.
  */
 /*
- * Dependencies. Requires a local copy of the WebSharks Core.
+ * Requires a local copy of the WebSharks Core.
  */
 /*
- * Semantic colors.
+ * General colors.
  */
 /*
  * Fancy blockquotes.
@@ -14,17 +14,47 @@
  * Fancy monospace tags.
  */
 /*
- * Social network colors.
+ * Named colors.
+ */
+/*
+ * Social networks.
+ */
+/*
+ * Our own names.
  */
 /*
  * Name that color!
  * <http://chir.ag/projects/name-that-color>
  */
 /*
+ * Font variables.
+ */
+/*
+ * Content font variables.
+ */
+/*
  * Pixels to rem.
  */
 /*
+ * Better inversions.
+ */
+/*
  * Fancy blockquotes.
+ */
+/*
+ * Fancy checkboxes.
+ */
+/*
+ * Fancy definitions.
+ */
+/*
+ * Fancy HR tags.
+ */
+/*
+ * Fancy link targets.
+ */
+/*
+ * Fancy messages.
  */
 /*
  * Fancy monospace tags.
@@ -39,16 +69,25 @@
  * Fancy placeholders.
  */
 /*
+ * Font events.
+ */
+/*
+ * Font features.
+ */
+/*
  * Pixels to rem.
  */
 /*
- * Mixins for responsive tweaks.
- * See: <http://semantic-ui.com/elements/container.html>
- * See: <http://semantic-ui.com/collections/grid.html#device-visibility>
- * See: <http://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/semantic.css>
+ * Device breakpoints.
+ * Following Semantic UI breakpoints.
  */
 /*
- * Larger fonts.
+ * Responsive utils.
+ * Following Semantic UI breakpoints.
+ * + custom `handheld` & `small screen` breakpoints.
+ */
+/*
+ * Responsive fonts.
  */
 /*
  * Responsive images.
@@ -57,10 +96,37 @@
  * Highlight.js <pre><code>.
  */
 /*
- * Mixins for responsive tweaks.
- * See: <http://semantic-ui.com/elements/container.html>
- * See: <http://semantic-ui.com/collections/grid.html#device-visibility>
- * See: <http://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/semantic.css>
+ * Box shadow tools.
+ */
+/*
+ * Centered tools.
+ */
+/*
+ * Text shadow tools.
+ */
+/*
+ * Position tools.
+ */
+/*
+ * Device breakpoints.
+ * Following Semantic UI breakpoints.
+ */
+/*
+ * Responsive utils.
+ * Following Semantic UI breakpoints.
+ * + custom `handheld` & `small screen` breakpoints.
+ */
+/*
+ * Text shadow tools.
+ */
+/*
+ * Device breakpoints.
+ * Following Semantic UI breakpoints.
+ */
+/*
+ * Responsive utils.
+ * Following Semantic UI breakpoints.
+ * + custom `handheld` & `small screen` breakpoints.
  */
 /*
  * Align utils.
@@ -69,19 +135,64 @@
  * Blurred utils.
  */
 /*
+ * Border utils.
+ */
+/*
+ * Box shadow utils.
+ */
+/*
+ * Color utils.
+ */
+/*
  * Content utils.
+ */
+/*
+ * Disabled utils.
  */
 /*
  * Display utils.
  */
 /*
- * Line clamp utils.
+ * Filter shadow utilities.
  */
 /*
- * Muted utils.
+ * Font utils.
+ */
+/*
+ * Height utils.
+ */
+/*
+ * Inset utils.
+ */
+/*
+ * Line utils.
+ */
+/*
+ * List utils.
+ */
+/*
+ * Margin utils.
+ */
+/*
+ * Opacity utils.
+ */
+/*
+ * Padding utils.
+ */
+/*
+ * Position utils.
  */
 /*
  * Responsive utils.
+ */
+/*
+ * Text shadow utilities.
+ */
+/*
+ * Visibility utils.
+ */
+/*
+ * Width utils.
  */
 /*
  * Brand configuration.
@@ -90,36 +201,32 @@
  * Structural styles.
  */
 .hljs-pre {
-  padding: 0;
-  border: 0;
-  border-radius: 0;
-  box-shadow: none;
-  text-shadow: none;
-  width: 100%;
-  height: auto;
+  display: block;
+  white-space: normal;
   max-height: none;
   overflow: visible;
-  display: block;
-  box-sizing: border-box;
+  padding: 0;
   background: none;
+  text-shadow: none;
+  box-shadow: none;
+  border: 0;
+  border-radius: 0;
 }
 
 .hljs-pre > .hljs {
+  display: block;
+  white-space: pre;
   margin: 0;
   padding: 1em;
-  border: 0;
-  border-radius: .25em;
-  box-shadow: none;
-  text-shadow: none;
+  max-height: 50vh;
+  overflow: auto;
   font-size: 1em;
   line-height: 1.3;
-  white-space: pre;
-  width: 100%;
-  height: auto;
-  max-height: 400px;
-  overflow: auto;
-  display: block;
-  box-sizing: border-box;
+  font-family: "Hack", "Menlo", "Monaco", "Consolas", "Andale Mono", "DejaVu Sans Mono", monospace;
+  text-shadow: none;
+  box-shadow: none;
+  border: 0;
+  border-radius: .25em;
 }
 
 /*# sourceMappingURL=style.css.map */

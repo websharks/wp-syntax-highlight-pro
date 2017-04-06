@@ -77,27 +77,30 @@ class StylesScripts extends SCoreClasses\SCore\Base\Core
         } elseif (!($settings = $this->applicableSettings())) {
             return; // Not applicable.
         }
+        $brand_slug = $this->App->Config->©brand['©slug'];
+        $brand_var  = $this->App->Config->©brand['©var'];
+
         s::enqueueHighlightJsLibs($settings['hljsStyle']);
 
         s::enqueueLibs(__METHOD__, [
             'styles' => [
-                $this->App->Config->©brand['©slug'] => [
-                    'ver'  => $this->App::VERSION,
+                $brand_slug => [
                     'deps' => ['highlight-js'],
+                    'ver'  => $this->App::VERSION,
                     'url'  => c::appUrl('/client-s/css/site/style.min.css'),
                 ],
             ],
             'scripts' => [
-                $this->App->Config->©brand['©slug'] => [
+                $brand_slug => [
                     'ver'      => $this->App::VERSION,
                     'deps'     => ['jquery', 'highlight-js', 'highlight-js-lang-wp'],
                     'url'      => c::appUrl('/client-s/js/site/script.min.js'),
                     'localize' => [
-                        'key'  => 'kkagfv2gdyd7wu2ambarnb2n6vcpbr83Data',
+                        'key'  => c::varToCamelCase($brand_var).'Data',
                         'data' => [
                             'brand' => [
-                                'slug' => $this->App->Config->©brand['©slug'],
-                                'var'  => $this->App->Config->©brand['©var'],
+                                'slug' => $brand_slug,
+                                'var'  => $brand_var,
                             ],
                             'settings' => $settings, // Filterable.
                             // See filter below in `applicableSettings()`.
@@ -144,7 +147,7 @@ class StylesScripts extends SCoreClasses\SCore\Base\Core
                 $lazy_load_says = false;
             } elseif (mb_stripos($WP_Post->post_content, $lazy_load_marker) !== false) {
                 $lazy_load_says = true; // Explicitly enabled by comment marker.
-            } elseif ($hljs_selectors === 'pre > code' // Only possible when we know what to look for.
+            } elseif (($hljs_selectors === 'pre > code' || $hljs_selectors === 'pre.code > code')
                 && (mb_stripos($WP_Post->post_content, '<pre') === false || mb_stripos($WP_Post->post_content, '<code') === false)
                 && mb_stripos($WP_Post->post_content, '[snippet') === false // `[snippet]` shortcode.
                 && mb_stripos($WP_Post->post_content, '[md') === false // `[md]` shortcode.

@@ -1,3 +1,8 @@
+## $v
+
+- Enhancing default options.
+- Enhancing default structural styles.
+
 ## v170329.47664
 
 - Adding lazy load configuration option.

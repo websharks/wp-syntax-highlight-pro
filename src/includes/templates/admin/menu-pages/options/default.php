@@ -64,8 +64,8 @@ $Form = $this->s::menuPageForm('§save-options');
         <?= $Form->inputRow([
             'type'  => 'text',
             'label' => __('Font Family', 'wp-syntax-highlight'),
-            'tip'   => __('Controls the containing element font family.', 'wp-syntax-highlight'),
-            'note'  => __('Comma-delimited monospace fonts used in CSS declaration.', 'wp-syntax-highlight'),
+            'tip'   => __('Controls the containing element font family. If empty, the font family is defined by the style you selected above.', 'wp-syntax-highlight'),
+            'note'  => __('Comma-delimited monospace fonts used in CSS. If empty, the font family is defined by the style you selected above.', 'wp-syntax-highlight'),
 
             'name'  => 'hljs_font_family',
             'value' => s::getOption('hljs_font_family'),

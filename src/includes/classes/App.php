@@ -42,7 +42,7 @@ class App extends SCoreClasses\App
      *
      * @type string Version.
      */
-    const VERSION = '170329.47664'; //v//
+    const VERSION = '170406.20241'; //v//
 
     /**
      * Constructor.
@@ -92,7 +92,7 @@ class App extends SCoreClasses\App
 
                 'hljs_style'       => 'github',
                 'hljs_bg_color'    => '', // Defaults to style definition.
-                'hljs_font_family' => "'Hack', 'Menlo', 'Monaco', 'Consolas', 'Andale Mono', 'DejaVu Sans Mono', monospace",
+                'hljs_font_family' => '', // Defaults to style definition.
 
                 'hljs_selectors'  => 'pre > code',
                 'hljs_exclusions' => '.no-hljs, .no-highlight, .nohighlight',
