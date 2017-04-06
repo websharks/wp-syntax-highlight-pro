@@ -2,9 +2,9 @@
 # This file is distributed under the same license as the WP Syntax Highlight Pro package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WP Syntax Highlight Pro 170406.20241\n"
+"Project-Id-Version: WP Syntax Highlight Pro 170406.21515\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/wp-syntax-highlight-pro\n"
-"POT-Creation-Date: 2017-04-06 05:37:24+00:00\n"
+"POT-Creation-Date: 2017-04-06 05:58:37+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -56,71 +56,71 @@ msgstr ""
 msgid "If empty, the background color is defined by the style you selected above."
 msgstr ""
 
-#: src/includes/templates/admin/menu-pages/options/default.php:66
-msgid "Font Family"
-msgstr ""
-
 #: src/includes/templates/admin/menu-pages/options/default.php:67
-msgid "Controls the containing element font family. If empty, the font family is defined by the style you selected above."
+msgid "Font Family Override"
 msgstr ""
 
 #: src/includes/templates/admin/menu-pages/options/default.php:68
-msgid "Comma-delimited monospace fonts used in CSS. If empty, the font family is defined by the style you selected above."
+msgid "Controls the containing element font family. If empty, a default monospace family is used."
 msgstr ""
 
-#: src/includes/templates/admin/menu-pages/options/default.php:76
-msgid "jQuery Selectors"
+#: src/includes/templates/admin/menu-pages/options/default.php:69
+msgid "Comma-delimited monospace fonts used in CSS. If empty, a default monospace family is used."
 msgstr ""
 
 #: src/includes/templates/admin/menu-pages/options/default.php:77
-msgid "jQuery selectors matching elements to highlight."
+msgid "jQuery Selectors"
 msgstr ""
 
 #: src/includes/templates/admin/menu-pages/options/default.php:78
-msgid "A comma-delimited list of CSS selectors compatible with jQuery; e.g., <code>$([selectors])</code>"
+msgid "jQuery selectors matching elements to highlight."
 msgstr ""
 
 #: src/includes/templates/admin/menu-pages/options/default.php:79
+msgid "A comma-delimited list of CSS selectors compatible with jQuery; e.g., <code>$([selectors])</code>"
+msgstr ""
+
+#: src/includes/templates/admin/menu-pages/options/default.php:80
 msgid "<em>Selecting <code>pre &gt; code</code> makes this compatible with fenced code blocks in Markdown; e.g., Jetpack.</em>"
 msgstr ""
 
-#: src/includes/templates/admin/menu-pages/options/default.php:87
+#: src/includes/templates/admin/menu-pages/options/default.php:88
 msgid "jQuery Text Classes"
 msgstr ""
 
-#: src/includes/templates/admin/menu-pages/options/default.php:88
+#: src/includes/templates/admin/menu-pages/options/default.php:89
 msgid "Instead of excluding selectors entirely, you can use one of these plain-text classes.<hr />Plain text blocks are given basic structural styles, but language parsing is disabled."
 msgstr ""
 
-#: src/includes/templates/admin/menu-pages/options/default.php:89
+#: src/includes/templates/admin/menu-pages/options/default.php:90
 msgid "Comma-delimited; e.g., <code>.lang-none, .plain, .text, .txt</code> (apply basic styles, but treat as plain text)."
 msgstr ""
 
-#: src/includes/templates/admin/menu-pages/options/default.php:97
+#: src/includes/templates/admin/menu-pages/options/default.php:98
 msgid "jQuery Exclusions"
 msgstr ""
 
-#: src/includes/templates/admin/menu-pages/options/default.php:98
+#: src/includes/templates/admin/menu-pages/options/default.php:99
 msgid "Controls the <code>:not()</code> filter in jQuery, which allows for special exclusion classes."
 msgstr ""
 
-#: src/includes/templates/admin/menu-pages/options/default.php:99
+#: src/includes/templates/admin/menu-pages/options/default.php:100
 msgid "Comma-delimited; e.g., <code>$([selectors]).not([exclusions])</code>"
 msgstr ""
 
-#: src/includes/templates/admin/menu-pages/options/default.php:106
+#: src/includes/templates/admin/menu-pages/options/default.php:107
 msgid "Lazy Load?"
 msgstr ""
 
-#: src/includes/templates/admin/menu-pages/options/default.php:107
+#: src/includes/templates/admin/menu-pages/options/default.php:108
 msgid "Enable this to avoid loading JS/CSS on pages that do not require syntax highlighting."
 msgstr ""
 
-#: src/includes/templates/admin/menu-pages/options/default.php:112
+#: src/includes/templates/admin/menu-pages/options/default.php:113
 msgid "Yes"
 msgstr ""
 
-#: src/includes/templates/admin/menu-pages/options/default.php:113
+#: src/includes/templates/admin/menu-pages/options/default.php:114
 msgid "No"
 msgstr ""
 
