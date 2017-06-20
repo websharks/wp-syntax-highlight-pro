@@ -4,7 +4,7 @@
  *
  * @wp-plugin
  *
- * Version: 170406.21899
+ * Version: 170620.35823
  * Text Domain: wp-syntax-highlight
  * Plugin Name: WP Syntax Highlight Pro
  *

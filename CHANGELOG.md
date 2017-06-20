@@ -2,6 +2,7 @@
 
 - Enhancing default options.
 - Enhancing default structural styles.
+- Adding Hash CSS framework compatibility.
 
 ## v170329.47664
 
