@@ -63,7 +63,7 @@ $Form = $this->s::menuPageForm('§save-options');
 
         <?= $Form->inputRow([
             'type'        => 'text',
-            'placeholder' => "'hack', 'menlo', 'monaco', 'consolas', 'andale mono', 'dejavu sans mono', monospace",
+            'placeholder' => "'menlo', 'consolas', monospace",
             'label'       => __('Font Family Override', 'wp-syntax-highlight'),
             'tip'         => __('Controls the containing element font family. If empty, a default monospace family is used.', 'wp-syntax-highlight'),
             'note'        => __('Comma-delimited monospace fonts used in CSS. If empty, a default monospace family is used.', 'wp-syntax-highlight'),
