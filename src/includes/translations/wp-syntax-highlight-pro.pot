@@ -2,9 +2,9 @@
 # This file is distributed under the same license as the WP Syntax Highlight Pro package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WP Syntax Highlight Pro 170625.84573\n"
+"Project-Id-Version: WP Syntax Highlight Pro 170625.85786\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/wp-syntax-highlight-pro\n"
-"POT-Creation-Date: 2017-06-25 23:29:36+00:00\n"
+"POT-Creation-Date: 2017-06-25 23:49:49+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -45,11 +45,11 @@ msgid "Additional Highlight.js Langs"
 msgstr ""
 
 #: src/includes/templates/admin/menu-pages/options/default.php:58
-msgid "Powered by Highlight.js.<hr />This option controls the additional languages Highlight.js will understand; i.e., above and beyond those it already supports by default.<hr />Review CDN resources and enter comma-delimited <code>[lang]</code>.min.js file basenames.<hr />e.g., <code>wp, typescript, scss</code>"
+msgid "Powered by Highlight.js.<hr />This option controls the additional languages Highlight.js will understand; i.e., above and beyond those it already supports by default.<hr />Review CDN resources and enter comma-delimited <code>[lang]</code>.min.js file basenames w/o extension.<hr />e.g., <code>wp, typescript, scss</code>"
 msgstr ""
 
 #: src/includes/templates/admin/menu-pages/options/default.php:59
-msgid "Review the list of <a href=\"%1$s\" target=\"_blank\">CDN resources</a> and enter comma-delimited <code>[lang]</code>.min.js file basenames."
+msgid "Review the list of <a href=\"%1$s\" target=\"_blank\">CDN resources</a> and enter comma-delimited <code>[lang]</code>.min.js file basenames w/o extension."
 msgstr ""
 
 #: src/includes/templates/admin/menu-pages/options/default.php:67

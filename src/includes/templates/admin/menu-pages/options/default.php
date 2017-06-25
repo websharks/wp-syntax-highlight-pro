@@ -55,8 +55,8 @@ $Form = $this->s::menuPageForm('§save-options');
             'type'        => 'text',
             'placeholder' => 'wp, typescript, scss',
             'label'       => __('Additional Highlight.js Langs', 'wp-syntax-highlight'),
-            'tip'         => __('Powered by Highlight.js.<hr />This option controls the additional languages Highlight.js will understand; i.e., above and beyond those it already supports by default.<hr />Review CDN resources and enter comma-delimited <code>[lang]</code>.min.js file basenames.<hr />e.g., <code>wp, typescript, scss</code>', 'wp-syntax-highlight'),
-            'note'        => sprintf(__('Review the list of <a href="%1$s" target="_blank">CDN resources</a> and enter comma-delimited <code>[lang]</code>.min.js file basenames.', 'wp-syntax-highlight'), esc_url($this->App->Config->hljs['cdn_files_list_url']), esc_url($this->App->Config->hljs['style_demos_url'])),
+            'tip'         => __('Powered by Highlight.js.<hr />This option controls the additional languages Highlight.js will understand; i.e., above and beyond those it already supports by default.<hr />Review CDN resources and enter comma-delimited <code>[lang]</code>.min.js file basenames w/o extension.<hr />e.g., <code>wp, typescript, scss</code>', 'wp-syntax-highlight'),
+            'note'        => sprintf(__('Review the list of <a href="%1$s" target="_blank">CDN resources</a> and enter comma-delimited <code>[lang]</code>.min.js file basenames w/o extension.', 'wp-syntax-highlight'), esc_url($this->App->Config->hljs['cdn_files_list_url'])),
 
             'name'  => 'hljs_langs',
             'value' => s::getOption('hljs_langs'),
