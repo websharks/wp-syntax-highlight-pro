@@ -80,7 +80,7 @@ class StylesScripts extends SCoreClasses\SCore\Base\Core
         $brand_slug = $this->App->Config->©brand['©slug'];
         $brand_var  = $this->App->Config->©brand['©var'];
 
-        s::enqueueHighlightJsLibs($settings['hljsStyle']);
+        s::enqueueHighlightJsLibs($settings['hljsStyle'], $settings['hljsLangs']);
 
         s::enqueueLibs(__METHOD__, [
             'styles' => [
@@ -129,7 +129,10 @@ class StylesScripts extends SCoreClasses\SCore\Base\Core
         $lazy_load        = s::getOption('lazy_load');
         $lazy_load_marker = '<!--'.$this->App->Config->©brand['©slug'].'-->';
 
-        $hljs_style       = s::getOption('hljs_style');
+        $hljs_style = s::getOption('hljs_style');
+        $hljs_langs = s::getOption('hljs_langs');
+        $hljs_langs = preg_split('/[,\s]+/u', $hljs_langs, -1, PREG_SPLIT_NO_EMPTY);
+
         $hljs_bg_color    = s::getOption('hljs_bg_color');
         $hljs_font_family = s::getOption('hljs_font_family');
 
@@ -164,7 +167,8 @@ class StylesScripts extends SCoreClasses\SCore\Base\Core
         }
         return $settings = s::applyFilters('script_settings', [
             'hljsStyle'      => $hljs_style,
-            'hljsStyle'      => $hljs_style,
+            'hljsLangs'      => $hljs_langs,
+
             'hljsBgColor'    => $hljs_bg_color,
             'hljsFontFamily' => $hljs_font_family,
 

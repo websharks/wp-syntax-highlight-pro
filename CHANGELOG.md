@@ -3,6 +3,7 @@
 - Enhancing default options.
 - Enhancing default structural styles.
 - Adding Hash CSS framework compatibility.
+- Adding support for additional custom Highlight.js languages.
 
 ## v170329.47664
 
