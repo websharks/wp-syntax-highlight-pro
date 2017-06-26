@@ -93,7 +93,7 @@ class StylesScripts extends SCoreClasses\SCore\Base\Core
             'scripts' => [
                 $brand_slug => [
                     'ver'      => $this->App::VERSION,
-                    'deps'     => ['jquery', 'highlight-js', 'highlight-js-lang-wp'],
+                    'deps'     => ['jquery', 'highlight-js'],
                     'url'      => c::appUrl('/client-s/js/site/script.min.js'),
                     'localize' => [
                         'key'  => c::varToCamelCase($brand_var).'Data',
